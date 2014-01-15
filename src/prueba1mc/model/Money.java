@@ -1,11 +1,9 @@
-
 package prueba1mc.model;
 
 public class Money {
 
     private Number amount;
     private Currency currency;
-
 
     public Money(Number amount, Currency currency) {
         this.amount = amount;
@@ -24,6 +22,4 @@ public class Money {
     public String toString() {
         return amount + " " + currency.getSymbol();
     }
-    
-    
 }

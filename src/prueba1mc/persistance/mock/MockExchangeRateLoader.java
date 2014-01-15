@@ -1,4 +1,3 @@
-
 package prueba1mc.persistance.mock;
 
 import java.util.Date;
@@ -11,13 +10,11 @@ public class MockExchangeRateLoader implements ExchangeRateLoader {
 
     @Override
     public ExchangeRate load(Date date, Currency from, Currency to) {
-        return new ExchangeRate(date, from, to, new Number(4,9));
+        return new ExchangeRate(date, from, to, new Number(4, 9));
     }
 
     @Override
     public ExchangeRate load(Currency from, Currency to) {
         return load(new Date(), from, to);
     }
-
-
 }

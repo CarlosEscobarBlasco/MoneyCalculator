@@ -1,16 +1,17 @@
-package prueba1mc.ui.dialog;
+package prueba1mc.ui.console;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import prueba1mc.model.Currency;
 import prueba1mc.model.CurrencySet;
+import prueba1mc.ui.CurrencyDialog;
 
 public class ConsoleCurrencyDialog implements CurrencyDialog {
 
     private Currency currency;
 
     @Override
-    public void execute(CurrencySet set) {
+    public void execute() {
         currency = readCurrency();
     }
 

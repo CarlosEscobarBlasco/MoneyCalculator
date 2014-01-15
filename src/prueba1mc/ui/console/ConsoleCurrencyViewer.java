@@ -1,6 +1,7 @@
-package prueba1mc.ui.viewer;
+package prueba1mc.ui.console;
 
 import prueba1mc.model.Currency;
+import prueba1mc.ui.CurrencyViewer;
 
 public class ConsoleCurrencyViewer implements CurrencyViewer {
 

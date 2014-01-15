@@ -1,11 +1,9 @@
-
-
 package prueba1mc.model;
 
 import java.util.Date;
 
-
 public class ExchangeRate {
+
     private Date date;
     private Currency from;
     private Currency to;
@@ -33,7 +31,4 @@ public class ExchangeRate {
     public Number getRate() {
         return rate;
     }
-    
-     
-
 }

@@ -34,15 +34,15 @@ public class Number {
         return new Number(this.getNumerator() * number.getDenominator() - number.getNumerator() * this.getDenominator(), this.getDenominator() * number.getDenominator()).simplify();
     }
 
-    public double aprox(){
-        return this.getNumerator()/this.getDenominator();
+    public double aprox() {
+        return this.getNumerator() / this.getDenominator();
     }
-    
+
     public Number simplify() {
         double mcd = mcd();
         return new Number(this.getNumerator() / mcd, this.getDenominator() / mcd);
     }
-    
+
     private double mcd() {
         double u = abs(this.getNumerator());
         double v = abs(this.getDenominator());
@@ -66,13 +66,18 @@ public class Number {
         }
     }
 
-    
-
     @Override
     public String toString() {
-        if (denominator == 0) return "Math Error";
-        if (denominator == 1) return numerator + "";
-        if (denominator == numerator) return "1";
-        return new Number(numerator,denominator).aprox() + "";
+        if (denominator == 0) {
+            return "Math Error";
+        }
+        if (denominator == 1) {
+            return numerator + "";
+        }
+        if (denominator == numerator) {
+            return "1";
+        }
+
+        return String.format("%.2f %n", new Number(numerator, denominator).aprox());
     }
 }

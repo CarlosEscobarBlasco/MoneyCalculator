@@ -1,11 +1,11 @@
-
-package prueba1mc.ui.dialog;
+package prueba1mc.ui;
 
 import prueba1mc.model.Currency;
 import prueba1mc.model.CurrencySet;
 
 public interface CurrencyDialog {
-    
-    public void execute(CurrencySet set);
+
+    public void execute();
+
     public Currency getCurrency();
 }
